@@ -1,15 +1,12 @@
-import java.util.Scanner;
-
 public class MonthData {
 
     int[] days = new int[30];
 
     void printDaysAndStepsFromMonth() {
-       for (int i = 0; i < days.length; i++) {
-           System.out.println((i+1) + " день: " + days[i] + " шагов.");
-       }
+        for (int i = 0; i < days.length; i++) {
+            System.out.println((i + 1) + " РґРµРЅСЊ: " + days[i] + " С€Р°РіРѕРІ.");
+        }
     }
-
 
     int sumStepsFromMonth() {
         int sumSteps = 0;
@@ -19,11 +16,10 @@ public class MonthData {
         return sumSteps;
     }
 
-
     int maxSteps() {
         int maxElement = 0;
         for (int i = 0; i < days.length; i++) {
-            if (days[i] > maxElement){
+            if (days[i] > maxElement) {
                 maxElement = days[i];
             }
         }
@@ -41,7 +37,6 @@ public class MonthData {
                 finalSeries = currentSeries;
             }
         }
-
         return finalSeries;
     }
 }

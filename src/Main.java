@@ -5,7 +5,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         StepTracker stepTracker = new StepTracker(scanner);
 
-
         while (true) {
             printMenu();
             int i = scanner.nextInt();
@@ -17,23 +16,21 @@ public class Main {
             } else if (i == 3) {
                 stepTracker.printStatistic();
             } else if (i == 0) {
-                System.out.println("Увидимся когда увидимся!");
+                System.out.println("РЈРІРёРґРёРјСЃСЏ РєРѕРіРґР° СѓРІРёРґРёРјСЃСЏ!");
                 scanner.close();
                 return;
             }else {
-                System.out.println("Такой команды нет, или пока не придумали. Попробуйте еще раз!");
+                System.out.println("РўР°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµС‚. РќР°С‡РЅРёС‚Рµ СЃРЅР°С‡Р°Р»Р°!");
             }
         }
     }
 
     static void printMenu() {
-        System.out.println("Здравствуйте! Введите пожалуйста номер команды, которая будет выполняться:");
-        System.out.println("1 - ввести количество шагов за определённый день");
-        System.out.println("2 - изменить цель по количеству шагов в день");
-        System.out.println("3 - напечатать статистику за определённый месяц");
-        System.out.println("0 - выйти из приложения");
+        System.out.println("Р§С‚Рѕ РІС‹ С…РѕС‚РёС‚Рµ СЃРґРµР»Р°С‚СЊ? Р’С‹Р±РµСЂРёС‚Рµ РєРѕРјР°РЅРґСѓ:");
+        System.out.println("1 - Р’РІРµСЃС‚Рё РєРѕР»РёС‡РµСЃС‚РІРѕ С€Р°РіРѕРІ Р·Р° РѕРїСЂРµРґРµР»С‘РЅРЅС‹Р№ РґРµРЅСЊ.");
+        System.out.println("2 - РР·РјРµРЅРёС‚СЊ С†РµР»СЊ РїРѕ РєРѕР»РёС‡РµСЃС‚РІСѓ С€Р°РіРѕРІ РІ РґРµРЅСЊ");
+        System.out.println("3 - РќР°РїРµС‡Р°С‚Р°С‚СЊ СЃС‚Р°С‚РёСЃС‚РёРєСѓ Р·Р° РѕРїСЂРµРґРµР»С‘РЅРЅС‹Р№ РјРµСЃСЏС†");
+        System.out.println("0 - Р’С‹Р№С‚Рё РёР· РїСЂРёР»РѕР¶РµРЅРёСЏ");
         System.out.println();
     }
 }
-
-
